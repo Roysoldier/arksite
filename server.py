@@ -112,7 +112,7 @@ def objet():
         cook=name
         isConnect = sign.is_connected(logger=logger,mydb=mydb,pseudo=name,debug=debug)
         res,err = mydb.read_rows("objet",["id","name","grade","nbr","stat","prix","img"])
-        print(res,err)
+        #print(res,err)
         ires,ierr = mydb.read_row("users",f"user = '{cook}'")
         if isConnect:
             render = {"login":isConnect,"pseudo":name,"dino":res,'img':ires[0][8],"level":ires[0][7]}
@@ -137,7 +137,7 @@ def schema():
         cook=name
         isConnect = sign.is_connected(logger=logger,mydb=mydb,pseudo=name,debug=debug)
         res,err = mydb.read_rows("schema",["id","name","grade","nbr","stat","prix","img"])
-        print(res,err)
+        #print(res,err)
         ires,ierr = mydb.read_row("users",f"user = '{cook}'")
         if isConnect:
             render = {"login":isConnect,"pseudo":name,"dino":res,'img':ires[0][8],"level":ires[0][7]}
@@ -193,7 +193,7 @@ def preso(id):
         cres, cerr = mydb.read_row("commentaire",f"channel = 'obj_{name}_{id}'")
         ires,ierr = mydb.read_row("users",f"user = '{cook}'")
         channel,all = trie_channel(name,id,'objet')
-        print(channel)
+        #print(channel)
         if isConnect:
             render = {"login":isConnect,"pseudo":name,"dino":res[0], "commentaire":cres,"level":ares[0][7],"channel":channel,"all":all,"id":id,'img':ires[0][8]}
         else:
@@ -598,7 +598,6 @@ def upload_file():
 @APP_FLASK.route('/objuploader', methods = ['POST'])
 def objupload_file():
     try:
-        print('ici')
         cook = request.cookies.get('USER_ID',"")
         name = ""
         if cook != "":
@@ -617,7 +616,7 @@ def objupload_file():
             f.save(path.join(APP_FLASK.config['UPLOAD_FOLDER'],f"{cook}_{f.filename}"))
             res,err = mydb.max_index('objet',"id")
             res,err = mydb.add_row("objet",{('id',res[0][0] + 1),('name',name),('grade',level),('nbr',nbr),('stat',stat),('prix',prix),('img',f"{cook}_{f.filename}")})
-            print(res,err)
+            #print(res,err)
         logger.log("Fichier uploader", "INFO")
     except:
         logger.log("Erreur inconnue dans objupload_file", "ERROR")
@@ -743,8 +742,7 @@ def trie_channel(name,id,cat):
     name = []
     res,err = mydb.read_row("commentaire",f"project = '{id}'")
     for i in res:
-        print('toto')
-        print(i,i[6])
+        #print(i,i[6])
         if i[6] == cat:
             if i[5] not in name:
                 name.append(i[5])
