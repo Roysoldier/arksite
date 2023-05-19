@@ -1,0 +1,598 @@
+body {
+    background-color: antiquewhite;
+}
+.log-img {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.bo-img {
+    margin-top: -1em;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    margin: auto;
+}
+
+.nameb {
+    text-align: center;
+    padding: 10px;
+    font-size: 65px;
+    color: #7b93ff;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.coo {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 55px;
+    color: #ff8a7a;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Largeur de 80% de la largeur disponible */
+    max-width:100%; /* Largeur maximale de 1200 pixels */
+  }
+
+
+  .name {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: #ffffff;
+    
+}
+.cmm {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    width: 820px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 250px;
+    color: #ffffff;
+}
+
+.cmm:focus {
+    border-radius: 20px;
+    background-color:rgba(153, 153, 153, 0.5);
+    border-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.cml {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    width: 820px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: #ffffff;
+}
+
+
+.cml::placeholder {
+    color: #fff;
+}
+
+.cml:focus {
+    border-radius: 20px;
+    background-color:rgba(153, 153, 153, 0.5);
+    border-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: bold;
+}
+
+.cm {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: #ffffff;
+}
+
+
+.cm::placeholder {
+    color: #fff;
+}
+
+.cm:focus {
+    border-radius: 20px;
+    background-color:rgba(153, 153, 153, 0.5);
+    border-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: bold;
+}
+.box-dino {
+    background-color: #ffbed7;
+    width: 500px;
+    height: 110px;
+    margin-top: 3.8em;
+   
+    border-radius: 15px;
+    z-index: 1;
+    border:  solid 5px rgb(255, 138, 236);
+    
+}
+
+.txt-dino {
+    color: whitesmoke ;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 7%;
+    font-size: 20px;
+
+/* La moitié de la hauteur de cet élément */
+}
+
+.add-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.option-add {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width:100%;
+    border-radius: 25px;
+    margin-top:1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color:rgba(255, 138, 236,0.1);
+    height: auto;
+    border: solid 2px rgb(255, 138, 236);
+}
+
+.add-button {
+    margin-top: 1em;
+    border-radius: 20px;
+    font-size: 60px;
+    width: 110px;
+    background-color: #7aff9b;
+    border: solid 5px #00bb2f;
+    z-index: 2;
+}
+.add-button:hover {
+    font-size: 60px;
+    width: 110px;
+    background-color: #99ffb2;
+    border: solid 5px #00df38;
+}
+.dino-img {
+    float: right;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: solid 6px whitesmoke;
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    max-height: 600px;
+    margin: 1%;
+    
+}
+
+.basetext{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    color: #000000;
+
+}
+.profil-box {
+    margin: auto;
+    border-radius: 50px;
+    width: 550px;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+.profil-name{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.request-file {
+    margin-top: 1em;
+    border-radius: 25px;
+    width: 250px;
+    background-color:rgba(0, 107, 57, 0.5);
+}
+
+.request-file:hover {
+    margin-top: 1em;
+    width: 260px;
+    border-radius: 50px;
+    background-color:rgba(0, 107, 57, 0.8);
+}
+
+.lu {
+    display:none
+ }
+ 
+ 
+.name-dino {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    color: rgb(0, 39, 73);
+    padding: 10px;
+    max-width: 100%;
+}
+.box-dino-info {
+    display: -moz-box;
+    min-width: 50%;
+    width: 100%;
+    max-width: 100%;
+    
+}
+.gn {
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.price-dino {
+    font-family: 'Josefin Sans', sans-serif;
+
+    font-size: 35px;
+    color: rgb(0, 39, 73);
+    padding: 10px;
+    max-width: 100%;
+}
+
+.lf:hover {
+    cursor: pointer;
+}
+
+.name::placeholder {
+    color: #fff;
+}
+.pb {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bss {
+    
+    margin-left:auto ;
+    margin-right: 40px;
+    color: #ffffff;
+}
+.dropdown-toggle {
+    color:rgb(134, 134, 134);
+}
+.dropdown-toggle:hover {
+    color:rgb(90, 90, 90);
+}
+.request {
+    margin-top: 1em;
+    width: 300px;
+    background-color:rgba(0, 107, 57, 0.5);
+}
+.smod {
+    background-color: #b8ffc9;
+}
+
+.request:hover {
+    margin-top: 1em;
+    width: 300px;
+    
+    background-color:rgba(167, 255, 214, 0.8);
+}
+.text-chat {
+    max-width: 100%;
+    max-height: 100%;
+}
+.button-comm {
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(66, 66, 66);
+    float:right;
+    margin: 10px;
+    display: block;
+    text-align: center;
+    width: 120px;
+    padding: 3px;
+    font-size: 15px;
+    border-color: rgb(110, 110, 110);
+}
+.button-comm:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80);
+    font-weight: bold;
+}
+
+.dropdown-base {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    color: white;
+    
+}
+
+.text-comment {
+    
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 59px;
+    margin-top: -1.5em;
+    margin-bottom: 0px;
+    color: rgb(0, 0, 0);
+}
+
+.name-comment {
+    position:static;
+    padding-left: 45px;
+    margin-left: 15px;
+    margin-top: -2.7em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.comment {
+    display: flexbox;
+     margin: 15px;
+ }
+ 
+
+.dropdown-content-op{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #525252;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    margin-top: -4px;
+    border-radius: 15px;
+  }
+  
+
+.drop-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    
+   
+}
+  
+  .drop-btn:focus {
+    outline: none;
+  }
+
+    
+  .dots {
+    fill: #999;
+  }
+
+
+.map-img {
+    width: 800px;
+    max-width: 100%;
+    border-radius: 25px;
+    border: solid 4px white;
+    display: flex;
+    margin: auto;
+}
+
+
+.box-chat {
+    overflow-y:scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    border: solid 1px black;
+    margin: 1%;
+    min-height: 70vh;
+}
+.sss {
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    width: 98%;
+    background-color: #000000;
+}
+
+.titlechat {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.word {
+    text-align: center;
+    font-size: 70px;
+}
+.title:hover {
+    cursor: pointer;
+    color: #3b5fff;
+    text-decoration: none;
+    font-size: 72px;
+}
+
+.title {
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: #5877ff;
+}
+
+
+
+.denum {
+    height: 100px;
+    font-size: 30px;
+    margin: 1em;
+    width: 210px;
+    background-color:rgba(255, 56, 56, 0.5);
+}
+
+.denum:hover {
+    margin-top: 1em;
+    
+   
+    background-color:rgba(255, 94, 94, 0.5);
+}
+
+.renum {
+    height: 100px;
+    font-size: 30px;
+    margin: 1em;
+    width: 210px;
+    background-color:rgba(55, 175, 255, 0.5);
+}
+
+.renum:hover {
+    margin-top: 1em;
+    
+   
+    background-color:rgba(96, 191, 255, 0.5);
+}
+
+
+.requestf {
+    
+    height: 100px;
+    font-size: 30px;
+    margin: 1em;
+    width: 210px;
+    background-color:rgba(0, 107, 57, 0.5);
+}
+
+
+
+.requestf:hover {
+    margin-top: 1em;
+    
+   
+    background-color:rgba(0, 107, 57, 0.8);
+}
+
+.size-mod {
+    
+    min-height: 90%;
+    max-height: 90%;
+}
+
+.name:focus {
+    border-radius: 20px;
+    width: 410px;
+    background-color:rgba(167, 255, 196, 0.5);
+    border-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: bold;
+}
+.name:focus::placeholder {
+    color: #ffbed7;
+}
+.tm {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+}
+
+
+.dino-select:hover {
+cursor: pointer;
+
+}
+form.center-block-form {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    
+    max-width: 100%;
+    max-height: auto;
+    text-align: center;
+  }
+
+.card-modif {
+    margin-top: 2em;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: auto;
+    max-width: 100%
+    
+}
+.dropdown-menu {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.dropdown-base {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    color: white;
+    
+}
+.center-page {
+    max-width: 100%;
+    padding: None;
+    margin: auto;
+}
+.dropdown-item {
+    color: #fff;
+}
+
+.base-form {
+    
+    background-color: rgba(107, 48, 201, 0.2);
+    border: solid white 2px;
+    border-radius: 25px;
+    color: #fff;
+    width: 100%;
+}
+
+.bg-dark {
+    background-color: #fff;
+    color: #fff;
+}
+
+.proj-img {
+    max-width: 100%;
+    border: solid white 2px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.proj-img:focus {
+    cursor: pointer;
+
+}
+
+.bs {
+    margin-left:auto ;
+    color: #ffffff;
+}
+
+
+.bs:hover {
+   color: rgba(194, 194, 194, 0.5);
+}

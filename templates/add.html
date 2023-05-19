@@ -1,0 +1,209 @@
+<html lang="fr">
+
+<head>
+  <title>Ajouter dino</title>
+  <link rel="icon" href="static/img/logol.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" class="nav">
+        <a class="navbar-brand" href="index.html">
+          <img src="static/img/logol.png" width="60" height="60" alt="">
+        </a>
+    
+        <a class="navbar-brand" href="">Boutique</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="dino.html">Dino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="objet.html">Objet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="schema.html">Schéma</a>
+              </li>
+            
+          </ul>
+          {% if not render['login']%}
+      <ul class="nav bs">
+        <li class="nav-item "><a href="signin.html" class="nav-link link-dark px-2 bs">Login</a></li>
+        <li class="nav-item"><a href="signup.html" class="nav-link link-dark px-2 bs">Sign up</a></li>
+      </ul>
+      {% else%}
+      
+      <div class="nav-item dropdown  bss">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <img src="./static/data/{{render['img']}}" alt="mdo" width="50" height="50" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu   text-small">
+          <li><a class="dropdown-item" href="editprofil.html">{{render['pseudo']}}</a></li>
+          <li><hr class="dropdown-divider"></li>
+          {%if render['level' ] == '1'%}
+          <li><a class="dropdown-item" href="add.html">add Vente</a></li>
+          {%endif%}
+          <li><a class="dropdown-item" href="#" onclick="sign_out()">Sign out</a></li>
+        </ul>
+      </div>
+      {%endif%}
+    </div>
+    </div>
+      </nav>
+  <div  class="add-item">
+    
+    <button type="submit" class="add-button"><p class="pb" onclick="dino_button()">+</p></button>
+    <div class="box-dino">
+        <p class="txt-dino">Ajouter un dino/groupe de dino a vendre</p>
+    </div>
+    
+   
+  </div>
+  <form name="loader" class="option-add " action = "/uploader" id="postera" method = "POST" 
+  enctype = "multipart/form-data">
+    <input type="text" id="name" name="name-dino" class="form-control cm" placeholder="Nom du dino">
+    <input type="number" id="name" name="level-dino" class="form-control cm" placeholder="level (ou moyenne)">
+    <input type="number" id="name" name="nbr-dino" class="form-control cm" placeholder="Nombre de dino a vendre ( supérieur a 0)">
+    <input type="text" id="name" name="stat-dino" class="form-control cm" placeholder="Statistique (muta ect ..)">
+    <input type="text" id="name" name="prix-dino" class="form-control cm" placeholder="Prix">
+    <input   class="form-control lu" type="file"  accept="image/*" id="formFile" name="file" hidden>
+    <select name="sexe" id="pet-select name" class="cm">
+        <option value="">--Sexe du dino--</option>
+        <option value="Male">Male</option>
+        <option value="Femelle">Femelle</option>
+        <option value="Autre">Autre</option>
+    </select>
+    <button type="button" onclick="file.click()" id="name" name="name-dino" class="form-control cml" placeholder="">Uploader une image</button>
+    <textarea id="story name" name="story" class="cmm"
+          rows="5" cols="33"> 
+    Description
+    </textarea>
+    <button type="button" onclick="alertify.success('Création de la vente'); document.forms['loader'].submit(); " id="name" name="name-dino" class="form-control cm" placeholder="">Valider</button>
+  </form>
+
+  
+  
+  
+  <script>
+    document.getElementById('postera').hidden = true
+    function dino_button() {
+        if (document.getElementById('postera').hidden == true)
+        {
+            document.getElementById('postera').hidden = false
+        }
+        else 
+        {
+            document.getElementById('postera').hidden = true
+        }
+    }
+  </script>
+ <div  class="add-item">
+    
+    <button type="submit" class="add-button"><p class="pb" onclick="dino_button_obj()">+</p></button>
+    <div class="box-dino">
+        <p class="txt-dino">Ajouter un objet  a vendre</p>
+    </div>
+    
+   
+  </div>
+
+<form name="loaderobj" class="option-add " action = "/objuploader" id="posterb" method = "POST" 
+  enctype = "multipart/form-data">
+    <input type="text" id="name" name="name-dino" class="form-control cm" placeholder="Nom de l'objet">
+    <input type="text" id="name" name="level-dino" class="form-control cm" placeholder="Rareté de l'objet">
+    <input type="number" id="name" name="nbr-dino" class="form-control cm" placeholder="Nombre d'exemplaire">
+    <input type="text" id="name" name="stat-dino" class="form-control cm" placeholder="Statistique">
+    <input type="text" id="name" name="prix-dino" class="form-control cm" placeholder="Prix">
+    <input   class="form-control lu" type="file"  accept="image/*" id="formFile" name="file" hidden>
+    <button type="button" onclick="file.click()" id="name" name="name-dino" class="form-control cm" placeholder="">Uploader une image</button>
+    <button type="button" onclick="alertify.success('Création de la vente'); document.forms['loaderobj'].submit(); " id="name" name="name-dino" class="form-control cm" placeholder="">Valider</button>
+  </form>
+
+  
+  
+  
+  <script>
+    document.getElementById('posterb').hidden = true
+    function dino_button_obj() {
+        if (document.getElementById('posterb').hidden == true)
+        {
+            document.getElementById('posterb').hidden = false
+        }
+        else 
+        {
+            document.getElementById('posterb').hidden = true
+        }
+    }
+  </script>
+
+<div  class="add-item">
+    
+    <button type="submit" class="add-button"><p class="pb" onclick="dino_button_sh()">+</p></button>
+    <div class="box-dino">
+        <p class="txt-dino">Ajouter un Shémat a vendre</p>
+    </div>
+    
+   
+  </div>
+
+<form name="loadersh" class="option-add " action = "/shuploader" id="posterc" method = "POST" 
+  enctype = "multipart/form-data">
+    <input type="text" id="name" name="name-dino" class="form-control cm" placeholder="Nom de l'objet">
+    <input type="text" id="name" name="level-dino" class="form-control cm" placeholder="Rareté de l'objet">
+    <input type="number" id="name" name="nbr-dino" class="form-control cm" placeholder="Nombre d'exemplaire">
+    <input type="text" id="name" name="stat-dino" class="form-control cm" placeholder="Statistique">
+    <input type="text" id="name" name="prix-dino" class="form-control cm" placeholder="Prix">
+    <input   class="form-control lu" type="file"  accept="image/*" id="formFile" name="file" hidden>
+    <button type="button" onclick="file.click()" id="name" name="name-dino" class="form-control cm" placeholder="">Uploader une image</button>
+    <button type="button" onclick="alertify.success('Création de la vente'); document.forms['loadersh'].submit(); " id="name" name="name-dino" class="form-control cm" placeholder="">Valider</button>
+  </form>
+
+  
+  
+  
+  <script>
+    document.getElementById('posterc').hidden = true
+    function dino_button_sh() {
+        if (document.getElementById('posterc').hidden == true)
+        {
+            document.getElementById('posterc').hidden = false
+        }
+        else 
+        {
+            document.getElementById('posterc').hidden = true
+        }
+    }
+  </script>
+    
+
+    <script src="static/js/connect.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+      <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+</body>
+
+</div>

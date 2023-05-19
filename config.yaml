@@ -1,0 +1,8 @@
+network:
+  ip: "127.0.0.1"
+  port: 443
+scheduler:
+  enable: False
+  interval: 1
+debug: True
+local: True
