@@ -209,7 +209,7 @@ def preso(id):
 @APP_FLASK.route('/press.html', methods=['GET'])
 def press(id):
     try:
-       
+      
         cook = request.cookies.get('USER_ID',"")
         name = ""
         if cook != "":
@@ -721,7 +721,7 @@ def upload_choiceobj():
 @APP_FLASK.route('/uploaderchoicesch', methods = ['POST'])
 def upload_choicesch():
     try:
-
+       
         cook = request.cookies.get('USER_ID',"")
         name = ""
         if cook != "":
@@ -729,7 +729,6 @@ def upload_choicesch():
             name = res[0][1]
 
         id = request.form['id']
-
     except:
         logger.log("Erreur inconnue dans upload_choicesch", "ERROR")
         if debug:

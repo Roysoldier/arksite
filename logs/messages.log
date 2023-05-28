@@ -5699,3 +5699,69 @@ IndexError: list index out of range
 2023-05-18 20:58:02,223 INFO     > Noan est connecté
 2023-05-18 20:58:02,227 INFO     > Compte déconnecter
 2023-05-19 11:49:14,833 INFO     > Création de la base de donnée
+2023-05-19 18:35:55,108 INFO     > Création de la base de donnée
+2023-05-19 18:36:01,961 DEBUG    > Requête signup.html
+2023-05-19 18:36:12,171 DEBUG    > Requête api_signup
+2023-05-19 18:36:12,172 WARNING  > Vérification des comptes désactivé
+2023-05-19 18:36:12,181 INFO     > Compte créé : Noan
+2023-05-19 18:36:12,323 DEBUG    > Requête signin.html
+2023-05-19 18:36:17,396 DEBUG    > Requête api_signin
+2023-05-19 18:36:17,396 INFO     > Autentification validé pour : roynoan@gmail.com
+2023-05-19 18:36:17,498 INFO     > Noan est connecté
+2023-05-19 18:36:21,009 INFO     > Création de la base de donnée
+2023-05-19 18:36:22,294 INFO     > Noan est connecté
+2023-05-19 18:36:24,263 INFO     > Noan est connecté
+2023-05-19 18:36:32,966 INFO     > Fichier uploader
+2023-05-19 18:36:32,967 INFO     > Noan est connecté
+2023-05-19 18:36:34,096 INFO     > Noan est connecté
+2023-05-19 18:36:35,064 INFO     > Noan est connecté
+2023-05-19 18:36:35,065 ERROR    > Erreur inconnue dans press.html
+2023-05-19 18:36:35,066 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 227, in press
+    render = {"login":isConnect,"pseudo":name,"dino":res[0], "commentaire":cres,"level":ares[0][7],"channel":channel,"all":all,"id":id,'img':ires[0][8]}
+IndexError: list index out of range
+
+2023-05-19 18:38:33,822 INFO     > Création de la base de donnée
+2023-05-19 18:38:35,418 INFO     > Fichier uploader
+2023-05-19 18:38:35,419 INFO     > Noan est connecté
+2023-05-19 18:38:38,540 INFO     > Noan est connecté
+2023-05-19 18:38:40,870 INFO     > Noan est connecté
+2023-05-19 18:38:40,871 ERROR    > Erreur inconnue dans press.html
+2023-05-19 18:38:40,872 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 227, in press
+    render = {"login":isConnect,"pseudo":name,"dino":res[0], "commentaire":cres,"level":ares[0][7],"channel":channel,"all":all,"id":id,'img':ires[0][8]}
+IndexError: list index out of range
+
+2023-05-19 18:39:06,009 INFO     > Création de la base de donnée
+2023-05-19 18:39:07,320 INFO     > Noan est connecté
+2023-05-19 18:39:07,321 ERROR    > Erreur inconnue dans press.html
+2023-05-19 18:39:07,322 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 227, in press
+    render = {"login":isConnect,"pseudo":name,"dino":res[0], "commentaire":cres,"level":ares[0][7],"channel":channel,"all":all,"id":id,'img':ires[0][8]}
+IndexError: list index out of range
+
+2023-05-19 18:39:27,329 INFO     > Création de la base de donnée
+2023-05-19 18:39:28,538 INFO     > Noan est connecté
+2023-05-19 18:39:28,539 ERROR    > Erreur inconnue dans press.html
+2023-05-19 18:39:28,543 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 227, in press
+    render = {"login":isConnect,"pseudo":name,"dino":res[0], "commentaire":cres,"level":ares[0][7],"channel":channel,"all":all,"id":id,'img':ires[0][8]}
+IndexError: list index out of range
+
+2023-05-19 18:39:55,444 INFO     > Noan est connecté
+2023-05-19 18:39:58,556 INFO     > Noan est connecté
+2023-05-19 18:40:09,166 INFO     > Fichier uploader
+2023-05-19 18:40:09,167 INFO     > Noan est connecté
+2023-05-19 18:40:11,829 INFO     > Noan est connecté
+2023-05-19 18:40:13,153 INFO     > Noan est connecté
+2023-05-19 18:40:49,155 INFO     > Création de la base de donnée
+2023-05-19 18:40:56,763 INFO     > Noan est connecté
+2023-05-19 18:40:58,118 INFO     > Noan est connecté
+2023-05-19 18:41:02,068 INFO     > Noan est connecté
+2023-05-19 18:41:03,416 INFO     > Noan est connecté
+2023-05-19 18:41:03,417 ERROR    > Erreur inconnue dans press.html
+2023-05-19 18:41:03,418 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 227, in press
+    render = {"login":isConnect,"pseudo":name,"dino":res[0], "commentaire":cres,"level":ares[0][7],"channel":channel,"all":all,"id":id,'img':ires[0][8]}
+IndexError: list index out of range
+
