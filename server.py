@@ -86,7 +86,7 @@ def dino():
             name = res[0][1]
         cook=name
         isConnect = sign.is_connected(logger=logger,mydb=mydb,pseudo=name,debug=debug)
-        res,err = mydb.read_rows("dino",["id","name","level","nbr","stat","prix","img"])
+        res,err = mydb.read_rows("dino",["id","name","level","nbr","stat","prix","img","type"])
 
         ires,ierr = mydb.read_row("users",f"user = '{cook}'")
         if isConnect:
@@ -111,7 +111,7 @@ def objet():
             name = res[0][1]
         cook=name
         isConnect = sign.is_connected(logger=logger,mydb=mydb,pseudo=name,debug=debug)
-        res,err = mydb.read_rows("objet",["id","name","grade","nbr","stat","prix","img"])
+        res,err = mydb.read_rows("objet",["id","name","grade","nbr","stat","prix","img","type"])
         #print(res,err)
         ires,ierr = mydb.read_row("users",f"user = '{cook}'")
         if isConnect:
@@ -136,7 +136,7 @@ def schema():
             name = res[0][1]
         cook=name
         isConnect = sign.is_connected(logger=logger,mydb=mydb,pseudo=name,debug=debug)
-        res,err = mydb.read_rows("schema",["id","name","grade","nbr","stat","prix","img"])
+        res,err = mydb.read_rows("schema",["id","name","grade","nbr","stat","prix","img","type"])
         #print(res,err)
         ires,ierr = mydb.read_row("users",f"user = '{cook}'")
         if isConnect:
@@ -293,7 +293,8 @@ def editprofil():
         isConnect = sign.is_connected(logger=logger,mydb=mydb,pseudo=cook,debug=debug)
         #print("login : ",isConnect)
         ires,ierr = mydb.read_row("users",f"user = '{cook}'")
-        render = {"login":isConnect,"pseudo":cook,"img": f"{ires[0][8]}","level":ires[0][7]}
+        print(ires)
+        render = {"login":isConnect,"pseudo":cook,"img": f"{ires[0][8]}","level":ires[0][7],"tribu": f"{ires[0][9]}"}
         #print("render : ",render)
         if debug:
             logger.log("Requête editprofil.html", "DEBUG")
@@ -524,6 +525,25 @@ def api_renum_sch():
         return jsonify({"status":"nok","msg":'error'})
 
 
+@APP_FLASK.route('/api/tribu', methods=['POST'])
+def api_tribu():
+    try:
+        cook = request.cookies.get('USER_ID',"")
+        name = ""
+        if cook != "":
+            res,err = mydb.read_row("users",f"hashcook = '{cook}'")
+            name = res[0][1]
+        cook = request.cookies.get('USER_ID',"")
+        #print("cook :",cook)
+        payload = request.json
+        res,err = mydb.update_row("users",f"user = '{name}'",f"tribu = '{payload['tribu']}'")
+        logger.log("Tribu modifier", "INFO")
+        return jsonify({"status":"ok","data":{'tribu':payload['tribu']}})
+    except:
+        logger.log("Erreur inconnue dans api_bio", "ERROR")
+        if debug:
+            logger.log(str(traceback.format_exc()),"DEBUG")
+        return jsonify({"status":"nok","msg":'error'})
 
 
 @APP_FLASK.route('/api/signup', methods=['POST'])
@@ -583,11 +603,15 @@ def upload_file():
         prix = request.form['prix-dino'].replace("'","£")
         sexe = request.form['sexe']
         description = request.form['story'].replace("'","£")
+        type = request.form['type']
+        if type == "Tribu":
+            type = res[0][9]
         
         if f and name and level and nbr and stat and prix and sexe and description:
             f.save(path.join(APP_FLASK.config['UPLOAD_FOLDER'],f"{cook}_{f.filename}"))
             res,err = mydb.max_index('dino',"id")
-            res,err = mydb.add_row("dino",{('id',res[0][0] + 1),('name',name),('level',level),('nbr',nbr),('stat',stat),('prix',prix),('img',f"{cook}_{f.filename}"),('sexe',sexe),('description',description)})
+            res,err = mydb.add_row("dino",{('id',res[0][0] + 1),('name',name),('level',level),('nbr',nbr),('stat',stat),('prix',prix),('img',f"{cook}_{f.filename}"),('sexe',sexe),('description',description),('type',type)})
+            
         logger.log("Fichier uploader", "INFO")
     except:
         logger.log("Erreur inconnue dans upload_file", "ERROR")
@@ -610,12 +634,14 @@ def objupload_file():
         nbr = request.form['nbr-dino']
         stat = request.form['stat-dino'].replace("'","£")
         prix = request.form['prix-dino'].replace("'","£")
-
+        type = request.form['type']
+        if type == "Tribu":
+            type = res[0][9]
         
         if f and name and level and nbr and stat and prix:
             f.save(path.join(APP_FLASK.config['UPLOAD_FOLDER'],f"{cook}_{f.filename}"))
             res,err = mydb.max_index('objet',"id")
-            res,err = mydb.add_row("objet",{('id',res[0][0] + 1),('name',name),('grade',level),('nbr',nbr),('stat',stat),('prix',prix),('img',f"{cook}_{f.filename}")})
+            res,err = mydb.add_row("objet",{('id',res[0][0] + 1),('name',name),('grade',level),('nbr',nbr),('stat',stat),('prix',prix),('img',f"{cook}_{f.filename}"),('type',type)})
             #print(res,err)
         logger.log("Fichier uploader", "INFO")
     except:
@@ -640,12 +666,12 @@ def shupload_file():
         nbr = request.form['nbr-dino']
         stat = request.form['stat-dino'].replace("'","£")
         prix = request.form['prix-dino'].replace("'","£")
-
+        type = request.form['type']
         
         if f and name and level and nbr and stat and prix:
             f.save(path.join(APP_FLASK.config['UPLOAD_FOLDER'],f"{cook}_{f.filename}"))
             res,err = mydb.max_index('schema',"id")
-            res,err = mydb.add_row("schema",{('id',res[0][0] + 1),('name',name),('grade',level),('nbr',nbr),('stat',stat),('prix',prix),('img',f"{cook}_{f.filename}")})
+            res,err = mydb.add_row("schema",{('id',res[0][0] + 1),('name',name),('grade',level),('nbr',nbr),('stat',stat),('prix',prix),('img',f"{cook}_{f.filename}"),('type',type)})
         logger.log("Fichier uploader", "INFO")
     except:
         logger.log("Erreur inconnue dans shjupload_file", "ERROR")
@@ -795,10 +821,10 @@ if __name__ == '__main__':
     debug = CONFIG.get('debug',False)
     local = CONFIG.get('local',False)
     logger.log("Création de la base de donnée", "INFO")
-    mydb.create_table("users",[("id","INTEGER"),("user","TEXT"),("email","TEXT"),("mdp","TEXT"),("lastlog","INTEGER"),("connected","INTEGER"),("hashcook","TEXT"),("level","TEXT"),('img','TEXT')])
-    mydb.create_table("dino",[("id","INTEGER"),("name","TEXT"),("level","TEXT"),("nbr","TEXT"),("stat","TEXT"),("prix","TEXT"),("img","TEXT"),("sexe","TEXT"),("description","TEXT")])
-    mydb.create_table("objet",[("id","INTEGER"),("name","TEXT"),("grade","TEXT"),("nbr","TEXT"),("stat","TEXT"),("prix","TEXT"),("img","TEXT")])
-    mydb.create_table("schema",[("id","INTEGER"),("name","TEXT"),("grade","TEXT"),("nbr","TEXT"),("stat","TEXT"),("prix","TEXT"),("img","TEXT")])
+    mydb.create_table("users",[("id","INTEGER"),("user","TEXT"),("email","TEXT"),("mdp","TEXT"),("lastlog","INTEGER"),("connected","INTEGER"),("hashcook","TEXT"),("level","TEXT"),('img','TEXT'),("tribu","TEXT")])
+    mydb.create_table("dino",[("id","INTEGER"),("name","TEXT"),("level","TEXT"),("nbr","TEXT"),("stat","TEXT"),("prix","TEXT"),("img","TEXT"),("sexe","TEXT"),("description","TEXT"),("type","TEXT")])
+    mydb.create_table("objet",[("id","INTEGER"),("name","TEXT"),("grade","TEXT"),("nbr","TEXT"),("stat","TEXT"),("prix","TEXT"),("img","TEXT"),("type","TEXT")])
+    mydb.create_table("schema",[("id","INTEGER"),("name","TEXT"),("grade","TEXT"),("nbr","TEXT"),("stat","TEXT"),("prix","TEXT"),("img","TEXT"),("type","TEXT")])
     mydb.create_table("commentaire",[("id","INTEGER"),("user","TEXT"),("project","TEXT"),("content","TEXT"),('img',"TEXT"),("channel","TEXT"),("category","TEXT")])
     if CONFIG['scheduler']['enable']:
         scheduler = BackgroundScheduler()

@@ -85,6 +85,7 @@
     <input type="number" id="name" name="nbr-dino" class="form-control cm" placeholder="Nombre de dino a vendre ( supérieur a 0)">
     <input type="text" id="name" name="stat-dino" class="form-control cm" placeholder="Statistique (muta ect ..)">
     <input type="text" id="name" name="prix-dino" class="form-control cm" placeholder="Prix">
+    
     <input   class="form-control lu" type="file"  accept="image/*" id="formFile" name="file" hidden>
     <select name="sexe" id="pet-select name" class="cm">
         <option value="">--Sexe du dino--</option>
@@ -92,6 +93,11 @@
         <option value="Femelle">Femelle</option>
         <option value="Autre">Autre</option>
     </select>
+    <select name="type" id="name" class="cm">
+      <option value="">--Qui vend le dino !--</option>
+      <option value="Tribu">Tribu</option>
+      <option value="Admin">Admin</option>
+  </select>
     <button type="button" onclick="file.click()" id="name" name="name-dino" class="form-control cml" placeholder="">Uploader une image</button>
     <textarea id="story name" name="story" class="cmm"
           rows="5" cols="33"> 
@@ -133,6 +139,11 @@
     <input type="number" id="name" name="nbr-dino" class="form-control cm" placeholder="Nombre d'exemplaire">
     <input type="text" id="name" name="stat-dino" class="form-control cm" placeholder="Statistique">
     <input type="text" id="name" name="prix-dino" class="form-control cm" placeholder="Prix">
+    <select name="type" id="name" class="cm">
+      <option value="">--Qui vend le dino !--</option>
+      <option value="Tribu">Tribu</option>
+      <option value="Admin">Admin</option>
+  </select>
     <input   class="form-control lu" type="file"  accept="image/*" id="formFile" name="file" hidden>
     <button type="button" onclick="file.click()" id="name" name="name-dino" class="form-control cm" placeholder="">Uploader une image</button>
     <button type="button" onclick="alertify.success('Création de la vente'); document.forms['loaderobj'].submit(); " id="name" name="name-dino" class="form-control cm" placeholder="">Valider</button>
@@ -173,6 +184,11 @@
     <input type="text" id="name" name="stat-dino" class="form-control cm" placeholder="Statistique">
     <input type="text" id="name" name="prix-dino" class="form-control cm" placeholder="Prix">
     <input   class="form-control lu" type="file"  accept="image/*" id="formFile" name="file" hidden>
+    <select name="type" id="name" class="cm">
+      <option value="">--Qui vend le dino !--</option>
+      <option value="Tribu">Tribu</option>
+      <option value="Admin">Admin</option>
+  </select>
     <button type="button" onclick="file.click()" id="name" name="name-dino" class="form-control cm" placeholder="">Uploader une image</button>
     <button type="button" onclick="alertify.success('Création de la vente'); document.forms['loadersh'].submit(); " id="name" name="name-dino" class="form-control cm" placeholder="">Valider</button>
   </form>

@@ -5765,3 +5765,503 @@ IndexError: list index out of range
     render = {"login":isConnect,"pseudo":name,"dino":res[0], "commentaire":cres,"level":ares[0][7],"channel":channel,"all":all,"id":id,'img':ires[0][8]}
 IndexError: list index out of range
 
+2023-06-05 14:55:40,459 INFO     > Création de la base de donnée
+2023-06-05 14:55:49,520 DEBUG    > Requête signin.html
+2023-06-05 14:55:55,647 DEBUG    > Requête api_signin
+2023-06-05 14:55:55,647 DEBUG    > Mot de passe incorect
+2023-06-05 14:55:55,648 ERROR    > Erreur inconnue dans api_signin
+2023-06-05 14:55:55,648 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 561, in api_signin
+    return resp
+UnboundLocalError: local variable 'resp' referenced before assignment
+
+2023-06-05 14:55:57,186 DEBUG    > Requête signup.html
+2023-06-05 14:56:13,582 DEBUG    > Requête api_signup
+2023-06-05 14:56:13,582 WARNING  > Vérification des comptes désactivé
+2023-06-05 14:56:13,585 DEBUG    > Email déja existant
+2023-06-05 14:56:17,396 DEBUG    > Requête signin.html
+2023-06-05 14:56:24,212 DEBUG    > Requête api_signin
+2023-06-05 14:56:24,212 INFO     > Autentification validé pour : roynoan@gmail.com
+2023-06-05 14:57:06,658 INFO     > Création de la base de donnée
+2023-06-05 14:57:09,220 DEBUG    > Requête signin.html
+2023-06-05 14:57:14,570 DEBUG    > Requête api_signin
+2023-06-05 14:57:14,571 DEBUG    > Mot de passe incorect
+2023-06-05 14:57:14,571 ERROR    > Erreur inconnue dans api_signin
+2023-06-05 14:57:14,572 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 561, in api_signin
+    return resp
+UnboundLocalError: local variable 'resp' referenced before assignment
+
+2023-06-05 14:57:20,942 DEBUG    > Requête api_signin
+2023-06-05 14:57:20,942 INFO     > Autentification validé pour : roynoan@gmail.com
+2023-06-05 14:57:20,989 INFO     > Noan est connecté
+2023-08-04 16:36:49,975 INFO     > Création de la base de donnée
+2023-08-04 16:37:19,372 DEBUG    > Requête signin.html
+2023-08-04 16:37:24,518 DEBUG    > Requête api_signin
+2023-08-04 16:37:24,518 INFO     > Autentification validé pour : roynoan@gmail.com
+2023-08-04 16:37:24,537 INFO     > Noan est connecté
+2023-08-04 16:37:27,098 INFO     > Noan est connecté
+2023-08-04 16:37:28,571 INFO     > Noan est connecté
+2023-08-04 16:37:31,870 INFO     > Noan est connecté
+2023-08-04 16:37:32,818 INFO     > Noan est connecté
+2023-08-04 16:37:33,265 INFO     > Noan est connecté
+2023-08-04 16:37:34,713 INFO     > Noan est connecté
+2023-08-04 16:37:37,070 INFO     > Noan est connecté
+2023-08-04 16:37:39,168 INFO     > Noan est connecté
+2023-08-04 16:38:18,389 INFO     > Fichier uploader
+2023-08-04 16:38:18,389 INFO     > Noan est connecté
+2023-08-04 16:38:20,005 INFO     > Noan est connecté
+2023-08-04 16:38:20,907 INFO     > Noan est connecté
+2023-08-04 16:38:22,941 INFO     > Noan est connecté
+2023-08-04 16:38:28,600 INFO     > Noan est connecté
+2023-08-04 16:38:36,333 INFO     > Noan est connecté
+2023-08-04 16:51:16,570 INFO     > Noan est connecté
+2023-08-04 16:51:17,608 INFO     > Noan est connecté
+2023-08-04 16:59:39,309 INFO     > Création de la base de donnée
+2023-08-04 16:59:44,451 INFO     > Noan est connecté
+2023-08-04 16:59:53,730 INFO     > Noan est connecté
+2023-08-04 17:01:27,897 INFO     > Noan est connecté
+2023-08-04 17:01:56,482 INFO     > Noan est connecté
+2023-08-04 17:01:56,482 DEBUG    > Requête editprofil.html
+2023-08-04 17:02:09,691 INFO     > Noan est connecté
+2023-08-04 17:02:10,150 INFO     > Noan est connecté
+2023-08-04 17:02:38,898 INFO     > Noan est connecté
+2023-08-04 17:02:40,850 INFO     > Noan est connecté
+2023-08-04 17:03:17,354 INFO     > Noan est connecté
+2023-08-04 17:03:26,980 INFO     > Noan est connecté
+2023-08-04 17:03:44,416 INFO     > Noan est connecté
+2023-08-04 17:04:05,545 INFO     > Noan est connecté
+2023-08-04 17:04:25,013 INFO     > Noan est connecté
+2023-08-04 17:09:02,740 INFO     > Noan est connecté
+2023-08-04 17:09:04,106 INFO     > Noan est connecté
+2023-08-04 17:09:12,405 INFO     > Noan est connecté
+2023-08-04 17:09:34,185 INFO     > Noan est connecté
+2023-08-04 17:09:34,843 INFO     > Noan est connecté
+2023-08-04 17:09:41,287 INFO     > Noan est connecté
+2023-08-04 17:09:42,208 INFO     > Noan est connecté
+2023-08-04 17:09:42,851 INFO     > Noan est connecté
+2023-08-04 17:09:45,457 INFO     > Noan est connecté
+2023-08-04 17:10:09,951 INFO     > Fichier uploader
+2023-08-04 17:10:09,951 INFO     > Noan est connecté
+2023-08-04 17:10:11,923 INFO     > Noan est connecté
+2023-08-04 17:10:13,253 INFO     > Noan est connecté
+2023-08-04 17:10:13,912 INFO     > Noan est connecté
+2023-08-04 17:11:47,830 INFO     > Noan est connecté
+2023-08-04 17:11:48,389 INFO     > Noan est connecté
+2023-08-04 17:11:49,207 INFO     > Noan est connecté
+2023-08-04 17:11:49,682 INFO     > Noan est connecté
+2023-08-04 17:12:34,129 INFO     > Création de la base de donnée
+2023-08-04 17:12:36,798 ERROR    > Erreur inconnue dans dino.html
+2023-08-04 17:12:36,798 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 86, in dino
+    name = res[0][1]
+IndexError: list index out of range
+
+2023-08-04 17:12:37,970 ERROR    > Erreur inconnue dans index.html
+2023-08-04 17:12:37,971 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 64, in index
+    name = res[0][1]
+IndexError: list index out of range
+
+2023-08-04 17:12:39,472 ERROR    > Erreur inconnue dans index.html
+2023-08-04 17:12:39,473 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 64, in index
+    name = res[0][1]
+IndexError: list index out of range
+
+2023-08-04 17:12:52,176 ERROR    > Erreur inconnue dans index.html
+2023-08-04 17:12:52,176 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 64, in index
+    name = res[0][1]
+IndexError: list index out of range
+
+2023-08-04 17:13:25,853 DEBUG    > Requête signup.html
+2023-08-04 17:13:35,345 DEBUG    > Requête api_signup
+2023-08-04 17:13:35,345 WARNING  > Vérification des comptes désactivé
+2023-08-04 17:13:35,349 INFO     > Compte créé : Noan
+2023-08-04 17:13:35,360 DEBUG    > Requête signin.html
+2023-08-04 17:13:42,254 DEBUG    > Requête api_signin
+2023-08-04 17:13:42,255 INFO     > Autentification validé pour : roynoan@gmail.com
+2023-08-04 17:13:42,271 INFO     > Noan est connecté
+2023-08-04 17:14:03,683 INFO     > Création de la base de donnée
+2023-08-04 17:14:05,518 INFO     > Noan est connecté
+2023-08-04 17:14:07,612 INFO     > Noan est connecté
+2023-08-04 17:14:21,227 INFO     > Fichier uploader
+2023-08-04 17:14:21,227 INFO     > Noan est connecté
+2023-08-04 17:14:22,961 INFO     > Noan est connecté
+2023-08-04 17:14:24,047 INFO     > Noan est connecté
+2023-08-04 17:14:26,760 INFO     > Noan est connecté
+2023-08-04 17:14:27,599 INFO     > Noan est connecté
+2023-08-04 17:15:21,533 INFO     > Noan est connecté
+2023-08-04 17:15:32,988 INFO     > Noan est connecté
+2023-08-04 17:15:37,921 INFO     > Noan est connecté
+2023-08-04 17:15:48,721 INFO     > Noan est connecté
+2023-08-04 17:15:50,811 INFO     > Noan est connecté
+2023-08-04 17:16:38,104 INFO     > Noan est connecté
+2023-08-04 17:16:50,593 INFO     > Fichier uploader
+2023-08-04 17:16:50,594 INFO     > Noan est connecté
+2023-08-04 17:16:52,762 INFO     > Noan est connecté
+2023-08-04 17:17:23,692 INFO     > Noan est connecté
+2023-08-04 17:17:25,580 INFO     > Noan est connecté
+2023-08-04 17:17:35,690 INFO     > Fichier uploader
+2023-08-04 17:17:35,691 INFO     > Noan est connecté
+2023-08-04 17:17:37,103 INFO     > Noan est connecté
+2023-08-04 17:17:40,392 INFO     > Noan est connecté
+2023-08-04 17:17:41,313 INFO     > Noan est connecté
+2023-08-04 17:17:41,994 INFO     > Noan est connecté
+2023-08-04 17:17:42,377 INFO     > Noan est connecté
+2023-08-04 17:17:49,946 INFO     > Noan est connecté
+2023-08-04 17:17:54,033 INFO     > Noan est connecté
+2023-08-04 17:17:55,661 INFO     > Noan est connecté
+2023-08-04 17:17:56,188 INFO     > Noan est connecté
+2023-08-04 17:17:56,559 INFO     > Noan est connecté
+2023-08-04 17:17:56,902 INFO     > Noan est connecté
+2023-08-04 17:17:57,659 INFO     > Noan est connecté
+2023-08-04 17:17:58,067 INFO     > Noan est connecté
+2023-08-04 17:17:58,410 INFO     > Noan est connecté
+2023-08-04 17:17:58,856 INFO     > Noan est connecté
+2023-08-04 17:17:59,246 INFO     > Noan est connecté
+2023-08-04 17:18:02,397 INFO     > Noan est connecté
+2023-08-04 17:18:02,819 INFO     > Noan est connecté
+2023-08-04 17:18:03,225 INFO     > Noan est connecté
+2023-08-04 17:18:04,223 INFO     > Noan est connecté
+2023-08-04 17:18:04,853 INFO     > Noan est connecté
+2023-08-04 17:18:05,318 INFO     > Noan est connecté
+2023-08-04 17:18:05,930 INFO     > Noan est connecté
+2023-08-04 17:18:06,455 INFO     > Noan est connecté
+2023-08-04 17:18:06,738 INFO     > Noan est connecté
+2023-08-04 17:18:07,419 INFO     > Noan est connecté
+2023-08-04 17:18:08,074 INFO     > Noan est connecté
+2023-08-04 17:18:08,504 INFO     > Noan est connecté
+2023-08-04 17:18:09,162 INFO     > Noan est connecté
+2023-08-04 17:18:14,962 INFO     > Noan est connecté
+2023-08-04 17:18:15,412 INFO     > Noan est connecté
+2023-08-04 17:18:15,805 INFO     > Noan est connecté
+2023-08-04 17:18:16,218 INFO     > Noan est connecté
+2023-08-04 17:18:16,685 INFO     > Noan est connecté
+2023-08-04 17:18:17,398 INFO     > Noan est connecté
+2023-08-04 17:18:19,530 INFO     > Noan est connecté
+2023-08-04 17:18:23,512 INFO     > Noan est connecté
+2023-08-04 17:18:26,162 INFO     > Noan est connecté
+2023-08-04 17:18:31,765 INFO     > Noan est connecté
+2023-08-04 17:18:32,543 INFO     > Noan est connecté
+2023-08-04 17:18:35,599 INFO     > Noan est connecté
+2023-08-04 17:18:40,701 INFO     > Noan est connecté
+2023-08-04 17:18:58,338 INFO     > Noan est connecté
+2023-08-04 17:18:59,340 INFO     > Noan est connecté
+2023-08-04 17:19:00,525 INFO     > Noan est connecté
+2023-08-04 17:19:02,353 INFO     > Noan est connecté
+2023-08-04 17:19:04,678 INFO     > Noan est connecté
+2023-08-04 17:19:08,357 INFO     > Noan est connecté
+2023-08-04 17:19:10,186 INFO     > Noan est connecté
+2023-08-04 17:19:11,907 INFO     > Noan est connecté
+2023-08-04 17:19:13,900 INFO     > Noan est connecté
+2023-08-04 17:19:15,910 INFO     > Noan est connecté
+2023-08-04 17:19:20,115 INFO     > Noan est connecté
+2023-08-04 17:22:43,694 INFO     > Noan est connecté
+2023-08-04 17:22:45,265 INFO     > Noan est connecté
+2023-08-04 17:22:45,265 DEBUG    > Requête editprofil.html
+2023-08-04 17:24:15,866 INFO     > Noan est connecté
+2023-08-04 17:24:15,866 DEBUG    > Requête editprofil.html
+2023-08-04 17:24:17,928 INFO     > Noan est connecté
+2023-08-04 17:24:17,929 DEBUG    > Requête editprofil.html
+2023-08-04 17:24:18,633 INFO     > Noan est connecté
+2023-08-04 17:24:18,634 DEBUG    > Requête editprofil.html
+2023-08-04 17:24:26,737 INFO     > Noan est connecté
+2023-08-04 17:24:26,737 DEBUG    > Requête editprofil.html
+2023-08-04 17:25:13,513 INFO     > Noan est connecté
+2023-08-04 17:25:13,513 DEBUG    > Requête editprofil.html
+2023-08-04 17:26:01,413 INFO     > Noan est connecté
+2023-08-04 17:26:01,414 DEBUG    > Requête editprofil.html
+2023-08-04 17:29:54,692 INFO     > Noan est connecté
+2023-08-04 17:29:54,692 DEBUG    > Requête editprofil.html
+2023-08-04 17:31:51,602 INFO     > Création de la base de donnée
+2023-08-04 17:31:57,608 ERROR    > Erreur inconnue dans index.html
+2023-08-04 17:31:57,609 DEBUG    > Traceback (most recent call last):
+  File "D:\Noan Programmation\learn\pifpafpouf\python\server.py", line 64, in index
+    name = res[0][1]
+IndexError: list index out of range
+
+2023-08-04 17:32:10,656 DEBUG    > Requête signup.html
+2023-08-04 17:32:25,080 DEBUG    > Requête api_signup
+2023-08-04 17:32:25,080 WARNING  > Vérification des comptes désactivé
+2023-08-04 17:32:25,087 INFO     > Compte créé : Noan
+2023-08-04 17:32:25,097 DEBUG    > Requête signin.html
+2023-08-04 17:32:31,107 DEBUG    > Requête api_signin
+2023-08-04 17:32:31,108 INFO     > Autentification validé pour : roynoan@gmail.com
+2023-08-04 17:32:31,124 INFO     > Noan est connecté
+2023-08-04 17:32:32,937 INFO     > Noan est connecté
+2023-08-04 17:32:32,937 DEBUG    > Requête editprofil.html
+2023-08-04 17:32:37,223 INFO     > Noan est connecté
+2023-08-04 17:32:37,223 DEBUG    > Requête editprofil.html
+2023-08-04 17:33:57,360 INFO     > Création de la base de donnée
+2023-08-04 17:33:58,978 INFO     > Noan est connecté
+2023-08-04 17:33:58,979 DEBUG    > Requête editprofil.html
+2023-08-04 17:34:59,247 INFO     > Création de la base de donnée
+2023-08-04 17:35:01,096 INFO     > Noan est connecté
+2023-08-04 17:35:01,097 DEBUG    > Requête editprofil.html
+2023-08-04 17:35:07,059 INFO     > Noan est connecté
+2023-08-04 17:35:07,059 DEBUG    > Requête editprofil.html
+2023-08-04 17:35:07,816 INFO     > Noan est connecté
+2023-08-04 17:35:07,817 DEBUG    > Requête editprofil.html
+2023-08-04 17:35:17,880 INFO     > Création de la base de donnée
+2023-08-04 17:35:19,553 INFO     > Noan est connecté
+2023-08-04 17:35:19,554 DEBUG    > Requête editprofil.html
+2023-08-04 17:35:25,631 INFO     > Noan est connecté
+2023-08-04 17:35:25,631 DEBUG    > Requête editprofil.html
+2023-08-04 17:36:20,865 INFO     > Création de la base de donnée
+2023-08-04 17:36:22,690 INFO     > Noan est connecté
+2023-08-04 17:36:22,690 DEBUG    > Requête editprofil.html
+2023-08-04 17:36:25,510 INFO     > Tribu modifier
+2023-08-04 17:36:25,519 INFO     > Noan est connecté
+2023-08-04 17:36:25,520 DEBUG    > Requête editprofil.html
+2023-08-04 17:36:29,737 INFO     > Noan est connecté
+2023-08-04 17:36:29,737 DEBUG    > Requête editprofil.html
+2023-08-04 17:36:58,541 INFO     > Création de la base de donnée
+2023-08-04 17:37:00,358 INFO     > Noan est connecté
+2023-08-04 17:37:00,358 DEBUG    > Requête editprofil.html
+2023-08-04 17:37:11,341 INFO     > Tribu modifier
+2023-08-04 17:37:11,349 INFO     > Noan est connecté
+2023-08-04 17:37:11,350 DEBUG    > Requête editprofil.html
+2023-08-04 17:40:47,271 INFO     > Création de la base de donnée
+2023-08-04 17:40:51,417 INFO     > Noan est connecté
+2023-08-04 17:40:51,417 DEBUG    > Requête editprofil.html
+2023-08-04 17:40:54,565 INFO     > Noan est connecté
+2023-08-04 17:41:07,996 INFO     > Fichier uploader
+2023-08-04 17:41:07,997 INFO     > Noan est connecté
+2023-08-04 17:41:22,177 INFO     > Fichier uploader
+2023-08-04 17:41:22,178 INFO     > Noan est connecté
+2023-08-04 17:41:23,756 INFO     > Noan est connecté
+2023-08-04 17:41:25,316 INFO     > Noan est connecté
+2023-08-04 17:41:26,104 INFO     > Noan est connecté
+2023-08-04 17:41:26,683 INFO     > Noan est connecté
+2023-08-04 17:41:27,371 INFO     > Noan est connecté
+2023-08-04 17:41:27,808 INFO     > Noan est connecté
+2023-08-04 17:41:39,844 INFO     > Création de la base de donnée
+2023-08-04 17:41:42,947 INFO     > Noan est connecté
+2023-08-04 17:41:57,759 INFO     > Fichier uploader
+2023-08-04 17:41:57,759 INFO     > Noan est connecté
+2023-08-04 17:42:05,683 INFO     > Noan est connecté
+2023-08-04 17:42:47,971 INFO     > Création de la base de donnée
+2023-08-04 17:42:50,492 INFO     > Noan est connecté
+2023-08-04 17:42:50,492 DEBUG    > Requête editprofil.html
+2023-08-04 17:42:54,293 INFO     > Noan est connecté
+2023-08-04 17:43:06,804 INFO     > Fichier uploader
+2023-08-04 17:43:06,805 INFO     > Noan est connecté
+2023-08-04 17:43:24,361 INFO     > Création de la base de donnée
+2023-08-04 17:43:25,759 INFO     > Noan est connecté
+2023-08-04 17:43:28,259 INFO     > Noan est connecté
+2023-08-04 17:43:28,794 INFO     > Noan est connecté
+2023-08-04 17:43:31,406 INFO     > Noan est connecté
+2023-08-04 17:43:42,833 INFO     > Fichier uploader
+2023-08-04 17:43:42,833 INFO     > Noan est connecté
+2023-08-04 17:44:12,913 INFO     > Noan est connecté
+2023-08-04 17:44:26,633 INFO     > Création de la base de donnée
+2023-08-04 17:44:29,580 INFO     > Noan est connecté
+2023-08-04 17:44:40,867 INFO     > Fichier uploader
+2023-08-04 17:44:40,867 INFO     > Noan est connecté
+2023-08-04 17:44:44,683 INFO     > Noan est connecté
+2023-08-04 17:44:45,257 INFO     > Noan est connecté
+2023-08-04 17:45:43,392 INFO     > Création de la base de donnée
+2023-08-04 17:45:46,183 INFO     > Noan est connecté
+2023-08-04 17:45:57,801 INFO     > Fichier uploader
+2023-08-04 17:45:57,802 INFO     > Noan est connecté
+2023-08-04 17:46:00,509 INFO     > Noan est connecté
+2023-08-04 17:46:34,970 INFO     > Création de la base de donnée
+2023-08-04 17:46:38,638 INFO     > Noan est connecté
+2023-08-04 17:46:50,448 INFO     > Fichier uploader
+2023-08-04 17:46:50,448 INFO     > Noan est connecté
+2023-08-04 17:46:52,252 INFO     > Noan est connecté
+2023-08-04 17:46:53,585 INFO     > Noan est connecté
+2023-08-04 17:46:54,652 INFO     > Noan est connecté
+2023-08-04 17:46:55,000 INFO     > Noan est connecté
+2023-08-04 17:46:55,365 INFO     > Noan est connecté
+2023-08-04 17:46:58,073 INFO     > Noan est connecté
+2023-08-04 17:47:09,181 INFO     > Fichier uploader
+2023-08-04 17:47:09,182 INFO     > Noan est connecté
+2023-08-04 17:47:11,506 INFO     > Noan est connecté
+2023-08-04 17:47:14,145 INFO     > Noan est connecté
+2023-08-04 17:47:14,740 INFO     > Noan est connecté
+2023-08-04 17:47:15,126 INFO     > Noan est connecté
+2023-08-04 17:47:15,605 INFO     > Noan est connecté
+2023-08-04 17:47:19,416 INFO     > Noan est connecté
+2023-08-04 17:48:16,458 INFO     > Noan est connecté
+2023-08-04 17:48:25,995 INFO     > Création de la base de donnée
+2023-08-04 17:48:33,979 INFO     > Fichier uploader
+2023-08-04 17:48:33,979 INFO     > Noan est connecté
+2023-08-04 17:48:35,548 INFO     > Noan est connecté
+2023-08-04 17:48:45,096 INFO     > Noan est connecté
+2023-08-04 17:48:58,293 INFO     > Fichier uploader
+2023-08-04 17:48:58,294 INFO     > Noan est connecté
+2023-08-04 17:49:46,620 INFO     > Création de la base de donnée
+2023-08-04 17:49:49,844 INFO     > Fichier uploader
+2023-08-04 17:49:49,844 INFO     > Noan est connecté
+2023-08-04 17:50:00,699 INFO     > Fichier uploader
+2023-08-04 17:50:00,700 INFO     > Noan est connecté
+2023-08-04 17:50:10,590 INFO     > Création de la base de donnée
+2023-08-04 17:50:13,969 INFO     > Fichier uploader
+2023-08-04 17:50:13,969 INFO     > Noan est connecté
+2023-08-04 17:50:28,662 INFO     > Fichier uploader
+2023-08-04 17:50:28,663 INFO     > Noan est connecté
+2023-08-04 17:50:44,896 INFO     > Fichier uploader
+2023-08-04 17:50:44,896 INFO     > Noan est connecté
+2023-08-04 17:51:05,073 INFO     > Création de la base de donnée
+2023-08-04 17:51:08,126 INFO     > Fichier uploader
+2023-08-04 17:51:08,126 INFO     > Noan est connecté
+2023-08-04 17:51:19,368 INFO     > Fichier uploader
+2023-08-04 17:51:19,368 INFO     > Noan est connecté
+2023-08-04 17:51:27,223 INFO     > Noan est connecté
+2023-08-04 17:51:29,552 INFO     > Noan est connecté
+2023-08-04 17:51:29,552 DEBUG    > Requête editprofil.html
+2023-08-04 17:51:31,387 INFO     > Noan est connecté
+2023-08-04 17:51:40,916 INFO     > Création de la base de donnée
+2023-08-04 17:51:43,860 INFO     > Noan est connecté
+2023-08-04 17:51:55,022 INFO     > Fichier uploader
+2023-08-04 17:51:55,022 INFO     > Noan est connecté
+2023-08-04 17:52:08,548 INFO     > Fichier uploader
+2023-08-04 17:52:08,549 INFO     > Noan est connecté
+2023-08-04 17:52:13,425 INFO     > Noan est connecté
+2023-08-04 17:52:17,141 INFO     > Noan est connecté
+2023-08-04 17:52:17,747 INFO     > Noan est connecté
+2023-08-04 17:52:18,152 INFO     > Noan est connecté
+2023-08-04 17:52:19,581 INFO     > Noan est connecté
+2023-08-04 17:52:19,581 DEBUG    > Requête editprofil.html
+2023-08-04 17:52:22,282 INFO     > Noan est connecté
+2023-08-04 17:52:35,971 INFO     > Fichier uploader
+2023-08-04 17:52:35,972 INFO     > Noan est connecté
+2023-08-04 17:52:47,176 INFO     > Noan est connecté
+2023-08-04 17:52:49,265 INFO     > Noan est connecté
+2023-08-04 17:52:49,568 INFO     > Noan est connecté
+2023-08-04 17:52:52,117 INFO     > Noan est connecté
+2023-08-04 17:53:05,887 INFO     > Fichier uploader
+2023-08-04 17:53:05,887 INFO     > Noan est connecté
+2023-08-04 17:53:34,039 INFO     > Fichier uploader
+2023-08-04 17:53:34,039 INFO     > Noan est connecté
+2023-08-04 17:53:40,007 INFO     > Noan est connecté
+2023-08-04 17:53:41,991 INFO     > Noan est connecté
+2023-08-04 17:53:42,654 INFO     > Noan est connecté
+2023-08-04 17:53:43,542 INFO     > Noan est connecté
+2023-08-04 17:53:46,641 INFO     > Noan est connecté
+2023-08-04 17:54:27,043 INFO     > Noan est connecté
+2023-08-04 17:54:44,721 INFO     > Création de la base de donnée
+2023-08-04 17:54:46,961 INFO     > Noan est connecté
+2023-08-04 17:54:46,961 DEBUG    > Requête editprofil.html
+2023-08-04 17:55:00,877 INFO     > Noan est connecté
+2023-08-04 17:55:17,682 INFO     > Fichier uploader
+2023-08-04 17:55:17,682 INFO     > Noan est connecté
+2023-08-04 17:55:19,799 INFO     > Noan est connecté
+2023-08-04 17:55:23,367 INFO     > Noan est connecté
+2023-08-04 17:55:45,444 INFO     > Fichier uploader
+2023-08-04 17:55:45,445 INFO     > Noan est connecté
+2023-08-04 17:55:46,473 INFO     > Noan est connecté
+2023-08-04 17:56:22,194 INFO     > Création de la base de donnée
+2023-08-04 17:56:28,279 INFO     > Noan est connecté
+2023-08-04 17:56:41,184 INFO     > Fichier uploader
+2023-08-04 17:56:41,184 INFO     > Noan est connecté
+2023-08-04 17:56:42,238 INFO     > Noan est connecté
+2023-08-04 17:57:26,203 INFO     > Noan est connecté
+2023-08-04 17:57:38,601 INFO     > Fichier uploader
+2023-08-04 17:57:38,602 INFO     > Noan est connecté
+2023-08-04 17:57:43,465 INFO     > Noan est connecté
+2023-08-04 17:57:49,730 INFO     > Création de la base de donnée
+2023-08-04 17:57:52,597 INFO     > Noan est connecté
+2023-08-04 17:58:02,792 INFO     > Fichier uploader
+2023-08-04 17:58:02,793 INFO     > Noan est connecté
+2023-08-04 17:58:04,233 INFO     > Noan est connecté
+2023-08-04 17:58:05,994 INFO     > Noan est connecté
+2023-08-04 17:58:12,011 INFO     > Noan est connecté
+2023-08-04 18:23:52,212 INFO     > Noan est connecté
+2023-08-04 18:23:54,494 INFO     > Noan est connecté
+2023-08-04 18:23:58,954 INFO     > Noan est connecté
+2023-08-04 18:24:00,936 INFO     > Noan est connecté
+2023-08-04 18:24:02,514 INFO     > Noan est connecté
+2023-08-04 18:24:04,161 INFO     > Noan est connecté
+2023-08-04 18:24:07,991 INFO     > Noan est connecté
+2023-08-04 18:24:58,594 INFO     > Noan est connecté
+2023-08-04 18:25:00,993 INFO     > Noan est connecté
+2023-08-04 18:25:05,858 INFO     > Noan est connecté
+2023-08-04 18:25:07,244 INFO     > Noan est connecté
+2023-08-04 18:25:08,221 INFO     > Noan est connecté
+2023-08-04 18:25:08,568 INFO     > Noan est connecté
+2023-08-04 18:25:09,005 INFO     > Noan est connecté
+2023-08-04 18:25:09,649 INFO     > Noan est connecté
+2023-08-04 18:25:10,591 INFO     > Noan est connecté
+2023-08-04 18:25:24,965 INFO     > Noan est connecté
+2023-08-04 18:26:00,643 INFO     > Noan est connecté
+2023-08-04 18:26:02,387 INFO     > Noan est connecté
+2023-08-04 18:26:04,232 INFO     > Noan est connecté
+2023-08-04 18:26:06,009 INFO     > Noan est connecté
+2023-08-04 18:26:07,566 INFO     > Noan est connecté
+2023-08-04 18:26:10,014 INFO     > Noan est connecté
+2023-08-04 18:26:10,655 INFO     > Noan est connecté
+2023-08-04 18:26:10,909 INFO     > Noan est connecté
+2023-08-04 18:26:14,230 INFO     > Noan est connecté
+2023-08-04 18:26:16,194 INFO     > Noan est connecté
+2023-08-04 18:26:18,530 INFO     > Noan est connecté
+2023-08-04 18:26:19,220 INFO     > Noan est connecté
+2023-08-04 18:26:20,616 INFO     > Noan est connecté
+2023-08-04 18:26:22,071 INFO     > Noan est connecté
+2023-08-04 18:26:31,631 INFO     > Noan est connecté
+2023-08-04 18:26:33,537 INFO     > Noan est connecté
+2023-08-04 18:26:34,617 INFO     > Noan est connecté
+2023-08-04 18:26:36,869 INFO     > Noan est connecté
+2023-08-04 18:26:38,454 INFO     > Noan est connecté
+2023-08-04 18:26:39,969 INFO     > Noan est connecté
+2023-08-04 18:26:40,446 INFO     > Noan est connecté
+2023-08-04 18:26:42,125 INFO     > Noan est connecté
+2023-08-04 18:26:43,126 INFO     > Noan est connecté
+2023-08-04 18:26:44,880 INFO     > Noan est connecté
+2023-08-04 18:26:45,698 INFO     > Noan est connecté
+2023-08-04 18:26:48,090 INFO     > Noan est connecté
+2023-08-04 18:26:49,487 INFO     > Noan est connecté
+2023-08-04 18:26:50,654 INFO     > Noan est connecté
+2023-08-04 18:27:00,691 INFO     > Noan est connecté
+2023-08-04 18:27:00,692 DEBUG    > Requête editprofil.html
+2023-08-04 18:27:14,853 INFO     > Tribu modifier
+2023-08-04 18:27:14,863 INFO     > Noan est connecté
+2023-08-04 18:27:14,863 DEBUG    > Requête editprofil.html
+2023-08-04 18:27:37,050 INFO     > Tribu modifier
+2023-08-04 18:27:37,058 INFO     > Noan est connecté
+2023-08-04 18:27:37,059 DEBUG    > Requête editprofil.html
+2023-08-04 18:27:44,884 INFO     > Fichier uploader
+2023-08-04 18:27:44,885 INFO     > Noan est connecté
+2023-08-04 18:27:44,885 DEBUG    > Requête editprofil.html
+2023-08-04 18:27:48,291 INFO     > Noan est connecté
+2023-08-04 18:27:53,488 INFO     > Noan est connecté
+2023-08-04 18:27:54,722 INFO     > Noan est connecté
+2023-08-04 18:27:55,608 INFO     > Noan est connecté
+2023-08-04 18:28:00,412 INFO     > Noan est connecté
+2023-08-04 18:28:02,952 INFO     > Noan est connecté
+2023-08-04 18:28:09,254 INFO     > Noan est connecté
+2023-08-04 18:28:09,942 INFO     > Noan est connecté
+2023-08-04 18:28:11,361 INFO     > Noan est connecté
+2023-08-04 19:32:55,504 INFO     > Création de la base de donnée
+2023-08-04 19:33:01,425 INFO     > Noan est connecté
+2023-08-04 19:33:03,110 INFO     > Noan est connecté
+2023-08-04 19:33:05,182 INFO     > Noan est connecté
+2023-08-04 19:33:09,695 INFO     > Noan est connecté
+2023-08-04 19:33:10,731 INFO     > Noan est connecté
+2023-08-04 19:33:11,312 INFO     > Noan est connecté
+2023-08-04 19:33:11,804 INFO     > Noan est connecté
+2023-08-04 19:33:12,329 INFO     > Noan est connecté
+2023-08-04 19:33:16,314 INFO     > Noan est connecté
+2023-08-04 19:33:16,314 DEBUG    > Requête editprofil.html
+2023-08-04 19:33:38,644 INFO     > Tribu modifier
+2023-08-04 19:33:38,655 INFO     > Noan est connecté
+2023-08-04 19:33:38,655 DEBUG    > Requête editprofil.html
+2023-08-04 19:33:44,903 INFO     > Tribu modifier
+2023-08-04 19:33:44,913 INFO     > Noan est connecté
+2023-08-04 19:33:44,914 DEBUG    > Requête editprofil.html
+2023-08-04 20:39:53,401 INFO     > Noan est connecté
+2023-08-04 20:39:55,410 INFO     > Noan est connecté
+2023-08-04 20:39:57,906 INFO     > Noan est connecté
+2023-08-04 20:39:58,750 INFO     > Noan est connecté
+2023-08-04 20:40:33,157 INFO     > Création de la base de donnée
+2023-08-04 20:40:36,571 DEBUG    > Requête signup.html
+2023-08-04 20:40:45,939 DEBUG    > Requête api_signup
+2023-08-04 20:40:45,940 WARNING  > Vérification des comptes désactivé
+2023-08-04 20:40:45,943 INFO     > Compte créé : Noan
+2023-08-04 20:40:45,954 DEBUG    > Requête signin.html
+2023-08-04 20:40:52,133 DEBUG    > Requête api_signin
+2023-08-04 20:40:52,133 INFO     > Autentification validé pour : roynoan@gmail.com
+2023-08-04 20:40:52,150 INFO     > Noan est connecté
